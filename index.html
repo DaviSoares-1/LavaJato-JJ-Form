@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de formulário para ordem de serviço da JJF Lava Jato LTDA">
+  <title>JJ Formulário</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./assets/car-repair-car-svgrepo-com.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body id="formPage">
+  <h1 class="heading">📝 JJ LAVA-JATO - Ordem de Serviço</h1>
+  <main id="main" class="main-container container">
+    <form action="./checkoutPage.html" method="get">
+      <div class="container mainData">
+        <h2 class="form-Heading">Dados do Atendimento:</h2>
+        <div class="container-Input">
+          <div>
+            <label for="data-hora">Data e Hora:</label>
+            <input type="datetime-local" name="data-hora" id="data-hora" required>
+          </div>
+          <div>
+            <label for="responsavel">Responsável:</label>
+            <input type="text" name="responsavel" id="responsavel" required>
+          </div>
+          <div>
+            <label for="qntdCarros">Carro n°:</label>
+            <input type="number" name="qntdCarros" id="qntdCarros" required>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="form-Heading">Dados do Veículo:</h2>
+        <div class="container-Input">
+          <div>
+            <label for="modelo">Modelo:</label>
+            <input type="text" name="modelo" id="modelo" required>
+          </div>
+          <div>
+            <label for="placa">Placa:</label>
+            <input type="text" name="placa" id="placa" required>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="form-Heading">Serviços Solicitados:</h2>
+        <div class="container-services">
+          <div>
+            <input type="checkbox" name="lavagemGeral" id="lavagemGeral" value="Lavagem Geral">
+            <label for="lavagemGeral">Lavagem Geral</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ducha" id="ducha" value="Ducha">
+            <label for="ducha">Ducha</label>
+          </div>
+          <div>
+            <input type="checkbox" name="higienizacao" id="higienizacao" value="Higienização">
+            <label for="higienizacao">Higienização</label>
+          </div>
+          <div>
+            <input type="checkbox" name="cera" id="cera" value="Aplicação De Cera">
+            <label for="cera">Aplicação de Cera</label>
+          </div>
+          <div>
+            <input type="checkbox" name="polimento" id="polimento" value="Polimento">
+            <label for="polimento">Polimento</label>
+          </div>
+          <div>
+            <input type="checkbox" name="uberTaxi" id="uberTaxi" value="Uber/Táxi">
+            <label for="uberTaxi">Uber/Táxi</label>
+          </div>
+          <div>
+            <input type="checkbox" name="carroGrande" id="carroGrande" value="Carro Grande">
+            <label for="carroGrande">Carro Grande</label>
+          </div>
+          <div>
+            <input type="checkbox" name="carroPequeno" id="carroPequeno" value="Carro Pequeno">
+            <label for="carroPequeno">Carro Pequeno</label>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="form-Heading">Valor a Receber:</h2>
+        <div class="container-Input">
+          <div>
+            <label for="totalPago">Total a Pagar:</label>
+            <input type="number" name="totalPago" id="totalPago" required placeholder="R$ 00,00">
+          </div>
+          <div>
+            <label for="caixinha">Caixinha:</label>
+            <input type="number" name="caixinha" id="caixinha" required placeholder="R$ 00,00">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="form-Heading">Serviços Solicitados:</h2>
+        <div class="container-payment">
+          <div>
+            <input type="radio" name="pagamento" id="dinheiro" value="Dinheiro em Espécie">
+            <label for="dinheiro">Dinheiro</label>
+          </div>
+          <div>
+            <input type="radio" name="pagamento" id="cartao" value="Cartão de Crédito/Débito">
+            <label for="cartao">Cartão de Crédito/Débito</label>
+          </div>
+          <div>
+            <input type="radio" name="pagamento" id="pix" value="Pix">
+            <label for="pix">PIX</label>
+          </div>
+          <div>
+            <input type="radio" name="pagamento" id="outros" value="outros">
+            <label for="outros">Outros</label>
+          </div>
+          <textarea name="outrosPagamentos" id="outros" placeholder="Qual seria outra forma de pagamento ..."></textarea>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="form-Heading">Observações:</h2>
+        <div class="container-observation">
+          <div>
+            <textarea name="observacao" id="observacao" placeholder="Algo importante a saber em relação ao serviço prestado?"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <input type="submit" value="Enviar" class="btn container">
+      </div>
+    </form>
+  </main>
+  <script src="./script/serviceOrder.js"></script>
+</body>
+
+</html>

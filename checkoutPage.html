@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados do Serviço</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./assets/car-repair-car-svgrepo-com.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body id="checkoutPage">
+  <h1 class="heading">Dados do Serviço</h1>
+  <main class="ckeckout-container container">
+    <ul class="serviceData container">
+      <li>
+        <p>Nome do Responsável: <strong><span id="responsavel"></span></strong></p>
+      </li>
+      <li>
+        <p>Data e Hora: <strong><span id="dataHora"></span></strong></p>
+      </li>
+      <li>
+        <p>Veículo n°: <strong><span id="qntdCarros"></span></strong></p>
+      </li>
+      <li>
+        <p>Modelo: <strong><span id="modelo"></span></strong></p>
+      </li>
+      <li>
+        <p>Placa: <strong><span id="placa"></span></strong></p>
+      </li>
+      <li>
+        <p>Informações do Serviço: <strong><span id="infos"></span></strong></p>
+      </li>
+      <li>
+        <p>Forma de Pagamento: <strong><span id="pagamento"></span></strong></p>
+      </li>
+      <li>
+        <p>Total Pago: <strong><span id="totalPago"></span></strong></p>
+      </li>
+      <li>
+        <p>Caixinha: <strong><span id="caixinha"></span></strong></p>
+      </li>
+      <li>
+        <p>Outra forma de pagamento: <strong><span id="outrosPagamentos"></span></strong></p>
+      </li>
+      <li>
+        <p>Observação: <strong><span id="observacao"></span></strong></p>
+      </li>
+      <div class="notalFiscal hidden">
+        <h2 class="form-Heading">Anexo da Nota Fiscal:</h2>
+        <label class="picture" for="picture__input" tabIndex="0">
+          <span class="picture__image"></span>
+        </label>
+        <input type="file" name="picture__input" id="picture__input">
+      </div>
+      <div class="container-btns">
+        <a href="./index.html" class="btn-link">Voltar ao formulário</a>
+        <button class="btn-print" type="button">Imprimir Documento</button>
+      </div>
+    </ul>
+  </main>
+  <script src="./script/serviceOrder.js"></script>
+  <script src="./script/inputImg.js"></script>
+  <script src="./script/printPage.js"></script>
+</body>
+
+</html>
