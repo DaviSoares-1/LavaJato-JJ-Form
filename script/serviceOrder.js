@@ -85,14 +85,14 @@ const caixinhaFormatado = new Intl.NumberFormat("pr-BR", { style: "currency", cu
 	+caixinha,
 )
 
-responsavel.innerText = nomeResponsavel
+responsavel.innerText = nomeResponsavel.toUpperCase().trim()
 data.innerText = `${newFormatDate.concat(day, "/", month, "/", year).join("")} - ${date.slice(11).join("")}`
 qntdCarro.innerText = carroNumero
-modeloVeiculo.innerText = modelo.toUpperCase()
-placaVeiculo.innerText = placa.toUpperCase()
+modeloVeiculo.innerText = modelo.toUpperCase().trim()
+placaVeiculo.innerText = placa.toUpperCase().trim()
 servicos.innerText = services.join(" - ")
 pagamento.innerText = tipoPagamento
 valor.innerText = totalPagoFormatado
 gorjeta.innerText = caixinhaFormatado
-obs.innerText = observacao
-outros.innerText = outrosPagamentos
+obs.innerText = observacao.trim()
+outros.innerText = outrosPagamentos.trim()
