@@ -39,7 +39,7 @@ let observacao = params.get("observacao")
 let tipoPagamento = params.get("pagamento")
 let servicoInfos = [
 	params.get("lavagemGeral"),
-	params.get("Ducha"),
+	params.get("ducha"),
 	params.get("higienização"),
 	params.get("Uber/Taxi"),
 	params.get("carroGrande"),
